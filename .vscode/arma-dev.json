@@ -1,0 +1,14 @@
+{
+	"title": "sellect's Whistle",
+	"name": "whistle",
+	"author": "sellect",
+	"version": "0.0.1",
+	"buildPath": "build",
+	"privateKey": "",
+	"serverDirs": [],
+	"serverUse32bit": false,
+	"clientDirs": [
+		"src/whistle"
+	],
+	"ftpConnection": {}
+}

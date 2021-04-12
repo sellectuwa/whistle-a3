@@ -2,7 +2,7 @@
 	"title": "sellect's Whistle",
 	"name": "whistle",
 	"author": "sellect",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"buildPath": "build",
 	"privateKey": "",
 	"serverDirs": [],

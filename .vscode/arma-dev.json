@@ -1,8 +1,8 @@
 {
 	"title": "sellect's Whistle",
-	"name": "whistle",
+	"name": "Whistle",
 	"author": "sellect",
-	"version": "0.0.3",
+	"version": "0.0.5",
 	"buildPath": "build",
 	"privateKey": "",
 	"serverDirs": [],

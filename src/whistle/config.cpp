@@ -1,8 +1,8 @@
 class CfgPatches {
-	class whistle {
+	class Whistle {
         name = "sellect's Whistle";
 		author = "sellect";
-        version = "0.0.1";
+        version = "0.0.5";
 		requiredAddons[] = {"ace_interact_menu"};
         units[] = {};
         weapons[] = {};
@@ -11,9 +11,14 @@ class CfgPatches {
 
 class CfgSounds {
     sounds[] = {};
-    class whistle1 {
+    class WhistleShort {
         name = "";
-        sound[] = {"\whistle\sounds\whistle.ogg", 10, 1, 300};
+        sound[] = {"\whistle\sounds\short.ogg", 7, 1, 300};
+        titles[] = {};
+    };
+    class WhistleLong {
+        name = "";
+        sound[] = {"\whistle\sounds\long.ogg", 7, 1, 300};
         titles[] = {};
     };
 };
@@ -23,10 +28,17 @@ class CfgVehicles {
     class CAManBase: Man {
         class ACE_SelfActions {
             class ACE_Equipment {
-                class whistle {
+                class Whistle {
                     displayName = "Whistle";
-                    statement = "terminate whistle_script; whistle_script = [] execVM '\whistle\scripts\whistle.sqf'";
                     icon = "\whistle\images\icon.paa";
+                    class Short {
+                        displayName = "Short";
+                        statement = "terminate whistle_script; whistle_script = ['WhistleShort'] execVM '\whistle\scripts\whistle.sqf'";
+                    }
+                    class Long {
+                        displayName = "Long";
+                        statement = "terminate whistle_script; whistle_script = ['WhistleLong'] execVM '\whistle\scripts\whistle.sqf'";
+                    }
                 };
             };
         };
